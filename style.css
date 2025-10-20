@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3e8ff; /* very light lavender background */
+    font-family: 'Arial', sans-serif;
+}
+
+.calculator {
+    width: 320px;
+    border: 1px solid #e0c3fc;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(180, 140, 255, 0.3);
+    background-color: #e9d5ff; /* soft lilac body */
+}
+
+.display {
+    background-color: #c4b5fd; /* light violet display */
+    color: #3b0764;
+    font-size: 2.5em;
+    padding: 20px;
+    text-align: right;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 1.5em;
+    border: none;
+    background-color: #ede9fe; /* very light purple buttons */
+    color: #3b0764; /* dark violet text for contrast */
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+    background-color: #ddd6fe; /* soft hover effect */
+    transform: scale(1.03);
+}
+
+.operator {
+    background-color: #d8b4fe; /* pastel purple for operators */
+    color: #4c1d95;
+}
+
+.operator:hover {
+    background-color: #c084fc;
+}
+
+.equals {
+    grid-column: span 2;
+    background-color: #a78bfa; /* light violet for equals */
+    color: white;
+    font-weight: bold;
+}
+
+.equals:hover {
+    background-color: #8b5cf6;
+}
+
+.btn-zero {
+    grid-column: span 2;
+}
